@@ -1,4 +1,6 @@
-FECapes
-=======
+## FECapes ##
+_________________________________
+### Capes for ForgeEssentials ###
+_________________________________
 
-Capes for ForgeEssentials
+Here may be found resources for the latest ForgeEssentials feature: Capes!
