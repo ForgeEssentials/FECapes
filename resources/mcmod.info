@@ -1,0 +1,21 @@
+[
+{
+  "modid": "FeCapes",
+  "name": "ForgeEssentials Capes",
+  "description": "Adding Permission based capes!",
+  "version": "@VERSION@",
+  "mcversion": "1.5.1",
+  "url": "https://github.com/ForgeEssentials/FEcapes",
+  "updateUrl": "",
+  "authors": [
+    "Dries007"
+  ],
+  "credits": "Dries007",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
