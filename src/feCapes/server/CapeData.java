@@ -48,6 +48,9 @@ public class CapeData
 
         if (FeCapes.conf.holidays && Holiday.current != null) return Holiday.current.url;
 
+        for (int i = 0; i < FeCapes.conf.capeservers.size(); i++)
+            if(FeCapes.conf.capeservers.get(i).containsKey(player.username)) return FeCapes.conf.capeservers.get(i).get(player.username);
+        
         PropQueryPlayerSpot prop = new PropQueryPlayerSpot(player, FeCapes.CAPEPERM);
         PermissionsAPI.getPermissionProp(prop);
         if (prop.hasValue()) return prop.getStringValue();
