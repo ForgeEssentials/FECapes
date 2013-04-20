@@ -1,8 +1,8 @@
-dries007#http://driesgames.game-server.cc/capes/starks.png
+dries007#http://driesgames.game-server.cc/capes/coffee_1.png
 AbrarSyed
 jgdovin
 Malkerian
 MysteriousAges
 luacs1998
-ChipUK#http://driesgames.game-server.cc/capes/cofee.png
+ChipUK#http://driesgames.game-server.cc/capes/coffee.png
 captain_shadows#http://driesgames.game-server.cc/capes/captainShadows.png
