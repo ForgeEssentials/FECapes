@@ -7,4 +7,4 @@ luacs1998
 ChipUK#http://driesgames.game-server.cc/capes/coffee.png
 captain_shadows#http://driesgames.game-server.cc/capes/captainShadows.png
 Urfatbullet#http://driesgames.game-server.cc/capes/pig.png
-nerane
+nerane#http://driesgames.game-server.cc/capes/butterfly.png
