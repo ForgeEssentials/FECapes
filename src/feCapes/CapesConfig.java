@@ -10,7 +10,6 @@ public class CapesConfig
     public int                  mode = FREE_MODE;
     public String               capeserver;
     public String               freeMode_CapeFile;
-    public boolean              allowDevList;
     public boolean              holidays;
     public boolean              mojangCapes;
     public boolean              mustHaveMod;
@@ -44,7 +43,6 @@ public class CapesConfig
             timeout = config.get(cat, "timeout", 5, "Time in seconds the player has before getting kicked.").getInt();
 
             holidays = config.get(cat, "holidays", true, "Give special capes on holidays. (see holidays.txt)").getBoolean(true);
-            allowDevList = config.get(cat, "allowDevList", true, "Please keep on true. FEdevs will get a cape if they join your server.").getBoolean(true);
             mojangCapes = config.get(cat, "mojangCapes", true, "If false, no mojang capes will be applied").getBoolean(true);
         }
 

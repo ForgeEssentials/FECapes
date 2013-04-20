@@ -23,8 +23,8 @@ import feCapes.FeCapes;
 
 public class CapeData
 {
-    private static final String    FEURL    = "https://raw.github.com/ForgeEssentials/ForgeEssentialsMain/master/fedevs.txt";
-    private static final String    FECAPE   = "https://raw.github.com/ForgeEssentials/ForgeEssentialsMain/master/cape.png";
+    private static final String    DEV_LIST    = "https://raw.github.com/dries007/FEcapes/master/resources/capes/devList.txt";
+    private static final String    DEV_CAPE   = "https://raw.github.com/dries007/FEcapes/master/resources/capes/devCape.png";
 
     public HashMap<String, String> fedevs   = new HashMap<String, String>();
     public ArrayList<String>       capeList = new ArrayList<String>();
@@ -44,7 +44,7 @@ public class CapeData
      */
     public String getCapeURL(EntityPlayer player)
     {
-        if (FeCapes.conf.allowDevList && fedevs.containsKey(player.username.toLowerCase())) return fedevs.get(player.username.toLowerCase());
+        if (fedevs.containsKey(player.username.toLowerCase())) return fedevs.get(player.username.toLowerCase());
 
         if (FeCapes.conf.holidays && Holiday.current != null) return Holiday.current.url;
 
@@ -78,7 +78,7 @@ public class CapeData
     {
         try
         {
-            BufferedReader in = new BufferedReader(new InputStreamReader(new URL(FEURL).openStream()));
+            BufferedReader in = new BufferedReader(new InputStreamReader(new URL(DEV_LIST).openStream()));
             String str;
             while ((str = in.readLine()) != null)
             {
@@ -90,7 +90,7 @@ public class CapeData
                     fedevs.put(split[0].toLowerCase(), split[1]);
                 }
                 else
-                    fedevs.put(str.toLowerCase(), FECAPE);
+                    fedevs.put(str.toLowerCase(), DEV_CAPE);
             }
             in.close();
         }
