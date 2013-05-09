@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import net.minecraft.client.Minecraft;
 
-import com.ForgeEssentials.api.modules.FEModule;
+import com.ForgeEssentials.core.moduleLauncher.FEModule;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
