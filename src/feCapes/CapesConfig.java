@@ -29,7 +29,7 @@ public class CapesConfig
     //@formatter:off
     String  commentMode =  FE_MODE +  ": (default) ForgeEssentials Permission mode. In this mode only players with the right permission can set capes.We support group capes."
             + "\n" + SERVER_MODE +    ": Server mode. This is basicly 'the old system', 1 cape per player, url like this: \"<capeserver>/username.png\""
-            + "\n" + FREE_MODE +      ": Free mode. In this mode you allow free choise of cape. (see capes.txt)";
+            + "\n" + FREE_MODE +      ": Free mode. In this mode you allow free choice of cape. (see capes.txt)";
     //@formatter:on
 
     public CapesConfig(File file)
