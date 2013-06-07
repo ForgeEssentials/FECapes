@@ -44,7 +44,7 @@ public class Holiday extends TimerTask
         }
         catch (NumberFormatException e)
         {
-            throw new RuntimeException("Are you kidding me? Your holidays are wrong!", e);
+            throw new RuntimeException("Unable to parse holiday dates. Please make sure your holiday dates are formatted properly. Proper formatting: dd-mm", e);
         }
 
         this.name = name;
@@ -120,7 +120,7 @@ public class Holiday extends TimerTask
                 pw.println("# Proper line syntax:");
                 pw.println("# dd-mm|Holiday Name|days before|days after|cape URL");
                 pw.println("# Example:");
-                pw.println("# 01-05|Dries007's birthday|0|0|" + FeCapes.DEFSERVER + "cake.png");
+                pw.println("# 01-05|Dries007's birthday|0|0|" + FeCapes.DEFSERVER + "theCakeIsALie.png");
                 pw.println("# ");
                 pw.println("25-12|Christmas|7|7|" + FeCapes.DEFSERVER + "christmas.png");
                 pw.println("01-1|New Years|2|2|" + FeCapes.DEFSERVER + "newyear.png");
