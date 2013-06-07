@@ -76,7 +76,7 @@ public class CapesCmd extends ForgeEssentialsCommandBase
     {
         if (args.length == 0)
         {
-            OutputHandler.chatWarning(sender, "You must provide a player or group as 1th argument.");
+            OutputHandler.chatWarning(sender, "You must provide a player or group as the first argument.");
             return;
         }
 
