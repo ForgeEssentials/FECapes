@@ -23,8 +23,8 @@ import feCapes.FeCapes;
 
 public class CapeData
 {
-    private static final String    DEV_LIST    = "https://raw.github.com/dries007/FEcapes/master/resources/capes/devList.txt";
-    private static final String    DEV_CAPE   = "https://raw.github.com/dries007/FEcapes/master/resources/capes/devCape.png";
+    private static final String    DEV_LIST    = "https://raw.github.com/ForgeEssentials/FEcapes/master/resources/capes/devList.txt";
+    private static final String    DEV_CAPE   = "https://raw.github.com/ForgeEssentials/FEcapes/master/resources/capes/devCape.png";
 
     public HashMap<String, String> fedevs   = new HashMap<String, String>();
     public ArrayList<String>       capeList = new ArrayList<String>();
@@ -123,7 +123,7 @@ public class CapeData
             {
                 PrintWriter pw = new PrintWriter(file);
                 pw.println("# Cape list");
-                pw.println("# If a cape is on this list, if can be choisen in freemode.");
+                pw.println("# If a cape is on this list, if can be chosen in freemode.");
                 pw.println("# In other modes TAB completion will only work on these commands, but you can manually add different capes.");
 
                 for (String s : Arrays.asList("hornwood", "blackfyre", "superman", "nightsWatch", "blackFish", "bacon", "royalGuard", "tawney", "targaryen_1", "targaryen", "kingsguard", "diamond", "rainbow", "frey", "baratheonOfKingsLanding", "coffee", "bolton", "goodbrother", "tully", "martell", "starks", "pig", "dayne", "lannister", "snowman", "enderman", "baratheon", "greyjoy", "baratheonOfStormsEnd", "arryn", "coffee_1", "dondarrion", "facelessMen", "slime", "newyear", "tyrell", "king", "christmas", "enderpearl", "muchroom", "batman", "baratheonOfDragonstone", "captainShadows", "templarKnight"))
