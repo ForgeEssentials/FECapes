@@ -50,7 +50,7 @@ public class CapesConfig
             holidays = config.get(cat, "holidays", true, "Give special capes on holidays. (see holidays.txt)").getBoolean(true);
             mojangCapes = config.get(cat, "mojangCapes", true, "If false, no mojang capes will be applied").getBoolean(true);
             
-            String[] temp = config.get(cat, "textFileServers", new String[] {"http://capes.mineuk.com/capes.txt"}, "In order of importance.\nFormat: \"username#url\" or \"username#filename\"\nIf there is no http, it will use a file relative to the text files directory.\nThese servers will override the properties but not the holidays or dev list.").getStringList();
+            String[] temp = config.get(cat, "textFileServers", new String[] {"http://capes.mineuk.com/capes.txt"}, "In order of importance.\nFormat: \"username#url\" or \"username#filename\"\nIf there is no http, it will use a file relative to the text file's directory.\nThese servers will override the properties, but will not override holidays or the dev list.").getStringList();
             for (int i = 0; i < temp.length; i ++)
                 capeservers.put(i, getAllOverrides(temp[i]));
         }
