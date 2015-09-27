@@ -53,7 +53,7 @@ public class PacketHandlerServer implements IPacketHandler
                     else
                         ((EntityPlayerMP) player).playerNetServerHandler.kickPlayerFromServer("Invalid FeCapes handshake");
                 break;
-                // GUI choise
+                // GUI chose
                 case 1:
                     if (FeCapes.conf.mode == CapesConfig.FREE_MODE)
                     {
@@ -79,7 +79,7 @@ public class PacketHandlerServer implements IPacketHandler
         else if (target.startsWith("g:"))
             updateGroup(PermissionsAPI.getGroupForName(target.replaceFirst("g:", "")));
         else
-            FeCapes.logger.severe("Dafuq? Not p: or g:...");
+            FeCapes.logger.severe("Something went wrong. Target names do not start with p: or g:...");
     }
 
     public void updateMe(EntityPlayer player)
